@@ -3,6 +3,10 @@ Simple Asterisk Fax manager, written in PHP
 
 This simple PHP script, in conjuction with appriopriate Asterisk dialplan, let users receive FAX in PDF format directly in its mailboxes.
 
+# Requirements
+
+A working Asterisk 13/14 box with res_fax and res_fax_spandsp included. PHPMailer (https://github.com/PHPMailer/PHPMailer) to send e-mail.
+
 # Usage
 
 Just for example, for Asterisk configured correctly with res_fax and res_fax_spandsp, you can use this dialplan sketch:
