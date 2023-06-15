@@ -66,11 +66,11 @@ if(file_exists($fax_file)) {
     $mail = new PHPMailer;
 
     $mail->isSMTP();
-    $mail->Host = "mailsrv.unisi.it";
+    $mail->Host = "[mailserver]";
     $mail->Port = 25;
 
     //Set who the message is to be sent from
-    $mail->setFrom('fax-noreply@unisi.it', 'FAX System');
+    $mail->setFrom('fax-noreply@changeme', 'FAX System');
 
     //Set who the message is to be sent to
     $mail->addAddress($fax_dest_email);
